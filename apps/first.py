@@ -8,7 +8,7 @@ import numpy as np
 from dash.dependencies import Input, Output
 from apps import common
 
-from app import app
+from index import app
 
 df = pd.read_csv('finalInfo.csv')
 
