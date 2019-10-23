@@ -5,6 +5,8 @@ from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
 from app import app
 from apps import pitch, first
+
+
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
     html.Div(id='page-content')
