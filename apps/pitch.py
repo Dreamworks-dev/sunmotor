@@ -94,7 +94,7 @@ layout = html.Div([
                         html.P([
                             html.P("Pitcher"),
                             dcc.Dropdown(id = 'opt', options = opts, value = opts[0]['value'])],
-                            style = {'width': '200px',
+                            style = {'width': '300px',
                                             'fontSize' : '20px',
                                             'padding-left' : '5px',
                                             'display': 'inline-block'}), 
@@ -147,7 +147,8 @@ layout = html.Div([
                                                                     "display": "block",
                                                                     "margin-left": "auto",
                                                                     "margin-right": "auto",
-                                                                    }, className = "five columns"),
+                                                                    "width" : "auto"
+                                                                    }, className = "six columns"),
                     
                     html.Div([
                         html.H3('vs Left Handed Hitters'),
@@ -161,7 +162,7 @@ layout = html.Div([
                                 'color': 'white',
                                 'backgroundColor' : 'rgb(111,76,179)'
                             } for x in fin.columns.to_list()
-                        ], style_table={'width': '90%'}),
+                        ], style_table={'width': '95%'}),
                         
                         html.H3('vs Right Handed Hitters'),
                         dash_table.DataTable(
@@ -175,7 +176,7 @@ layout = html.Div([
                                 'backgroundColor' : 'rgb(111,76,179)'
                             } for x in finR.columns.to_list()
                         ],
-                        style_table={'width': '90%'})], className = "seven columns")],className = "row")],className = "all")
+                        style_table={'width': '95%'})], className = "six columns")], className = "row")],className = "all")
                     
 ##                    html.Div([
 ##                        html.H3('vs Right Handed Hitters'),
