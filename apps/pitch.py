@@ -7,7 +7,7 @@ import datetime
 import numpy as np
 from dash.dependencies import Input, Output
 from apps import common
-from app import app
+from index import app
 import dash_table
 import base64
 import dash_bootstrap_components as dbc
