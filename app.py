@@ -6,11 +6,11 @@ import dash_bootstrap_components as dbc
 
 external_stylesheets = [ dbc.themes.BOOTSTRAP, 'https://codepen.io/almostburtmacklin/pen/QWWKEJb.css']
 server = flask.Flask(__name__)
-@server.route('/')
+@server.route('/apps')
 def index():
     return 'Hello Flask app'
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets,
-                server = server, routes_pathname_prefix='/dash/')
+                server = server)
 
 app.config.suppress_callback_exceptions = True
