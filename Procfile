@@ -1,1 +1,1 @@
-web: gunicorn index:server -- logs
+web: gunicorn index:app
