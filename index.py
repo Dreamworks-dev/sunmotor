@@ -3,16 +3,8 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
-
+from app import app
 from apps import pitch, first
-external_stylesheets = [ dbc.themes.BOOTSTRAP, 'https://codepen.io/almostburtmacklin/pen/QWWKEJb.css']
-
-app = dash.Dash(__name__, server=server, external_stylesheets=external_stylesheets )
-server = app.server
-app.config.supress_callback_exceptions = True
-#app = dash.Dash(__name__, external_stylesheets=external_stylesheets )
-#app.config.suppress_callback_exceptions = True
-
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
     html.Div(id='page-content')
