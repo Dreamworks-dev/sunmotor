@@ -5,7 +5,7 @@ from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
 from app import app
 from app import server
-from apps import pitch, first
+from apps import pitch, first, bal, nyy, tbr, bos, tor
 
 
 app.layout = html.Div([
@@ -21,6 +21,16 @@ def display_page(pathname):
         return first.layout
     elif pathname == '/pitch':
         return pitch.layout
+    elif pathname == '/apps/bal':
+        return bal.layout
+    elif pathname == '/apps/nyy':
+        return nyy.layout
+    elif pathname == '/apps/tbr':
+        return tbr.layout
+    elif pathname == '/apps/bos':
+        return bos.layout
+    elif pathname == '/apps/tor':
+        return tor.layout
     else:
         return first.layout
 

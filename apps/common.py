@@ -17,46 +17,46 @@ def get_header():
 def get_menu():
 
     ale = [
-        dbc.DropdownMenuItem("New York Yankees", href = "/apps/yankees"),
-        dbc.DropdownMenuItem("Tampa Bay Rays", href = "/apps/rays"),
-        dbc.DropdownMenuItem("Boston Red Sox", href = "/apps/redsox"),
-        dbc.DropdownMenuItem("Toronto Blue Jays", href = "/apps/jays"),
-        dbc.DropdownMenuItem("Baltimore Orioles", href = "/apps/os")
+        dbc.DropdownMenuItem("New York Yankees", href = "/apps/nyy"),
+        dbc.DropdownMenuItem("Tampa Bay Rays", href = "/apps/tbr"),
+        dbc.DropdownMenuItem("Boston Red Sox", href = "/apps/bos"),
+        dbc.DropdownMenuItem("Toronto Blue Jays", href = "/apps/tor"),
+        dbc.DropdownMenuItem("Baltimore Orioles", href = "/apps/bal")
     ]
     alc = [
-        dbc.DropdownMenuItem("Minnesota Twins", href = "/apps/twins"),
-        dbc.DropdownMenuItem("Cleveland Indians", href = "/apps/indians"),
-        dbc.DropdownMenuItem("Chicago White Sox", href = "/apps/whitesoxs"),
-        dbc.DropdownMenuItem("Kansas City Royals", href = "/apps/royals"),
-        dbc.DropdownMenuItem("Detroit Tigers", href = "/apps/tigers")
+        dbc.DropdownMenuItem("Minnesota Twins", href = "/apps/min"),
+        dbc.DropdownMenuItem("Cleveland Indians", href = "/apps/cle"),
+        dbc.DropdownMenuItem("Chicago White Sox", href = "/apps/chw"),
+        dbc.DropdownMenuItem("Kansas City Royals", href = "/apps/kcr"),
+        dbc.DropdownMenuItem("Detroit Tigers", href = "/apps/det")
     ]
     alw = [
-        dbc.DropdownMenuItem("Minnesota Twins", href = "/apps/twins"),
-        dbc.DropdownMenuItem("Cleveland Indians", href = "/apps/indians"),
-        dbc.DropdownMenuItem("Chicago White Sox", href = "/apps/whitesoxs"),
-        dbc.DropdownMenuItem("Kansas City Royals", href = "/apps/royals"),
-        dbc.DropdownMenuItem("Detroit Tigers", href = "/apps/tigers")
+        dbc.DropdownMenuItem("Houston Astros", href = "/apps/hou"),
+        dbc.DropdownMenuItem("Oakland A's", href = "/apps/oak"),
+        dbc.DropdownMenuItem("Texas Rangers", href = "/apps/tex"),
+        dbc.DropdownMenuItem("Los Angeles Angels", href = "/apps/laa"),
+        dbc.DropdownMenuItem("Seattle Mariners", href = "/apps/sea")
     ]
     nle = [
-        dbc.DropdownMenuItem("Atlanta Braves", href = "/apps/twins"),
-        dbc.DropdownMenuItem("Cleveland Indians", href = "/apps/indians"),
-        dbc.DropdownMenuItem("Chicago White Sox", href = "/apps/whitesoxs"),
-        dbc.DropdownMenuItem("Kansas City Royals", href = "/apps/royals"),
-        dbc.DropdownMenuItem("Detroit Tigers", href = "/apps/tigers")
+        dbc.DropdownMenuItem("Atlanta Braves", href = "/apps/atl"),
+        dbc.DropdownMenuItem("Washington Nationals", href = "/apps/wsn"),
+        dbc.DropdownMenuItem("Philadelphia Phillies", href = "/apps/phi"),
+        dbc.DropdownMenuItem("New York Mets", href = "/apps/nym"),
+        dbc.DropdownMenuItem("Miami Marlins", href = "/apps/mia")
     ]
     nlc = [
-        dbc.DropdownMenuItem("St. Louis Cardinals", href = "/apps/twins"),
-        dbc.DropdownMenuItem("Cleveland Indians", href = "/apps/indians"),
-        dbc.DropdownMenuItem("Chicago White Sox", href = "/apps/whitesoxs"),
-        dbc.DropdownMenuItem("Kansas City Royals", href = "/apps/royals"),
-        dbc.DropdownMenuItem("Detroit Tigers", href = "/apps/tigers")
+        dbc.DropdownMenuItem("St. Louis Cardinals", href = "/apps/stl"),
+        dbc.DropdownMenuItem("Milwakee Brewers", href = "/apps/mil"),
+        dbc.DropdownMenuItem("Chicago Cubs", href = "/apps/chc"),
+        dbc.DropdownMenuItem("Cincinatti Reds", href = "/apps/cin"),
+        dbc.DropdownMenuItem("Pittsburg Pirates", href = "/apps/pit")
     ]
     nlw = [
-        dbc.DropdownMenuItem("Los Angeles Dodgers", href = "/apps/twins"),
-        dbc.DropdownMenuItem("Cleveland Indians", href = "/apps/indians"),
-        dbc.DropdownMenuItem("Chicago White Sox", href = "/apps/whitesoxs"),
-        dbc.DropdownMenuItem("Kansas City Royals", href = "/apps/royals"),
-        dbc.DropdownMenuItem("Detroit Tigers", href = "/apps/tigers")
+        dbc.DropdownMenuItem("Los Angeles Dodgers", href = "/apps/lad"),
+        dbc.DropdownMenuItem("San Diego Padres", href = "/apps/sdp"),
+        dbc.DropdownMenuItem("San Fransico Giants", href = "/apps/sfg"),
+        dbc.DropdownMenuItem("Arizona Diamondbacks", href = "/apps/ari"),
+        dbc.DropdownMenuItem("Colorado Rockies", href = "/apps/col")
     ]
 
     dropdowns = html.Div(
