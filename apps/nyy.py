@@ -78,8 +78,8 @@ b = ['0.0','1.0','2.0','3.0']
 s = ['0.0','1.0','2.0']
 fin = counts(s,b,'L',  opts[0]['value'] )
 finR = counts(s,b,'R', opts[0]['value'])
-image_filename = 'oriole.jpg' # replace with your own image
-encoded_image = base64.b64encode(open(image_filename, 'rb').read())
+#image_filename = 'oriole.jpg' # replace with your own image
+#encoded_image = base64.b64encode(open(image_filename, 'rb').read())
 
 layout = html.Div([
                 #common.get_header(),
