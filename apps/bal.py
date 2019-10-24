@@ -343,6 +343,3 @@ def update_dropdown(input1):
 if __name__ == '__main__':
     app.run_server(debug=True)
 
-
-
-# https://community.plot.ly/t/two-graphs-side-by-side/5312
