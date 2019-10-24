@@ -9,6 +9,9 @@ from apps import pitch
 from apps import first
 from apps import bal
 from apps import nyy
+from apps import tor
+from apps import tbr
+from apps import bos
 
 
 app.layout = html.Div([
@@ -28,12 +31,12 @@ def display_page(pathname):
         return bal.layout
     elif pathname == '/apps/nyy':
         return nyy.layout
-    #elif pathname == '/apps/tbr':
-     #   return tbr.layout
-    #elif pathname == '/apps/bos':
-     #   return bos.layout
-    #elif pathname == '/apps/tor':
-     #   return tor.layout
+    elif pathname == '/apps/tbr':
+        return tbr.layout
+    elif pathname == '/apps/bos':
+        return bos.layout
+    elif pathname == '/apps/tor':
+        return tor.layout
     else:
         return first.layout
 
