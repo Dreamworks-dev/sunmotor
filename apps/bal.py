@@ -15,12 +15,12 @@ import dash_bootstrap_components as dbc
 
 df = pd.read_csv('bal.csv', dtype={'b_count': str, 's_count' : str})
 
-teamColor = [[0, "rgb(255,255,255)"],
-                [0.25, "rgb(248.4,218,204)"],
-                [0.45, "rgb(241.8,181,153)"],
-                [0.65, "rgb(235.2,144,102)"],
-                [0.85, "rgb(228.6,107,51)"],
-                [1, "rgb(222,70,0)"]]
+teamColor = [[0, "#EEEEEE"],
+                [0.25, "#BEBEBE"],
+                [0.45, "#8E8E8E"],
+                [0.65, "#5f5f5f"],
+                [0.85, "#2F1F2F"],
+                [1, "#000"]]
 
 features = df.pitcher_id.unique()
 features.sort()
@@ -266,7 +266,7 @@ def update_figure(input1, input2, input3, input4, input5):
                 x1=.7083,
                 y1=3.435,
                 line=dict(
-                    color="Black",
+                    color= "#ff7838",
                 ))])
         
         return fig1     #increase num
