@@ -106,7 +106,7 @@ layout = html.Div([
                         html.P([
                             html.P("Pitch Type", style={'color' : 'white'}),
                             dcc.Dropdown(id = 'pitch5', options = tops, value = tops[0]['value'])],  #increase num
-                            style = {'width': '250px',
+                            style = {'width': '300px',
                                             'fontSize' : '20px',
                                             'padding-left' : '75px',
                                             'display': 'inline-block'}),
