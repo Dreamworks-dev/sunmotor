@@ -13,7 +13,7 @@ import base64
 import dash_bootstrap_components as dbc
 
 
-df = pd.read_csv('pitch_data_merged.csv', dtype={'b_count': str, 's_count' : str})
+df = pd.read_csv('bal.csv', dtype={'b_count': str, 's_count' : str})
 
 teamColor = [[0, "rgb(255,255,255)"],
                 [0.25, "rgb(248.4,218,204)"],
