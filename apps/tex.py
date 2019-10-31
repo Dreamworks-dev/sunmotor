@@ -62,6 +62,12 @@ def counts(s,b,hand,pitcher):
         for ba in b:
             res = []
             total = df.query('pitcher_id == @pitcher and b_count == @ba and s_count == @st and stand == @hand').shape[0]
+            
+            if total == 0:
+                total = total + 1
+             else:
+                total = total
+                
             for value in pitches:
                 res.append(df.query('pitcher_id == @pitcher and b_count == @ba and s_count == @st and pitch_type == @value and stand == @hand').shape[0]
                        /total)
@@ -292,6 +298,12 @@ def update_table_Left(pitcher, value):
         for ba in b:
             res = []
             total = df.query('pitcher_id == @pitcher and b_count == @ba and s_count == @st and stand == "L"').shape[0]
+            
+            if total == 0:
+                total = total + 1
+             else:
+                total = total
+                
             for value in pitches:
                 res.append(df.query('pitcher_id == @pitcher and b_count == @ba and s_count == @st and pitch_type == @value and stand == "L"').shape[0]
                        /total)
@@ -322,6 +334,12 @@ def update_table_Right(pitcher, value):
         for ba in b:
             res = []
             total = df.query('pitcher_id == @pitcher and b_count == @ba and s_count == @st and stand == "R"').shape[0]
+            
+            if total == 0:
+                total = total + 1
+             else:
+                total = total
+            
             for value in pitches:
                 res.append(df.query('pitcher_id == @pitcher and b_count == @ba and s_count == @st and pitch_type == @value and stand == "R"').shape[0]
                        /total)
