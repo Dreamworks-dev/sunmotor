@@ -65,7 +65,7 @@ def counts(s,b,hand,pitcher):
             
             if total == 0:
                 total = total + 1
-             else:
+            else:
                 total = total
                 
             for value in pitches:
@@ -301,7 +301,7 @@ def update_table_Left(pitcher, value):
             
             if total == 0:
                 total = total + 1
-             else:
+            else:
                 total = total
                 
             for value in pitches:
@@ -337,7 +337,7 @@ def update_table_Right(pitcher, value):
             
             if total == 0:
                 total = total + 1
-             else:
+            else:
                 total = total
             
             for value in pitches:
