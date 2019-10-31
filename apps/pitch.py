@@ -13,7 +13,7 @@ import base64
 import dash_bootstrap_components as dbc
 
 
-df = pd.read_csv('pitch_data_merged.csv', dtype={'b_count': str, 's_count' : str})
+df = pd.read_csv('data/pitch_data_merged.csv', dtype={'b_count': str, 's_count' : str})
 
 
 features = df.pitcher_id.unique()

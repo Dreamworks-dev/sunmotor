@@ -9,7 +9,7 @@ from dash.dependencies import Input, Output
 from apps import common
 from app import app
 
-df = pd.read_csv('finalInfo.csv')
+df = pd.read_csv('data/finalInfo.csv')
 
 features = df.pitcher_id.unique()
 features.sort()

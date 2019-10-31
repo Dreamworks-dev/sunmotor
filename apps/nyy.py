@@ -13,7 +13,7 @@ import base64
 import dash_bootstrap_components as dbc
 
 
-df = pd.read_csv('nyy.csv', dtype={'b_count': str, 's_count' : str})
+df = pd.read_csv('data/nyy.csv', dtype={'b_count': str, 's_count' : str})
 
 teamColor = [[0, "rgb(255,255,255)"],
                 [0.25, "rgb(207.6,211.2,218.4)"],
@@ -105,7 +105,7 @@ layout = html.Div([
                         html.P([
                             html.P("Pitch Type", style={'color' : darker}),
                             dcc.Dropdown(id = 'pitch2', options = tops, value = tops[0]['value'])],  #increase num
-                            style = {'width': '300px',
+                            style = {'width': '250px',
                                             'fontSize' : '20px',
                                             'padding-left' : '75px',
                                             'display': 'inline-block'}),
