@@ -25,18 +25,18 @@ from apps import sea
 from apps import atl
 from apps import wsn
 from apps import phi
-from apps import nym
-from apps import mia
-from apps import stl
-from apps import mil
-from apps import chc
-from apps import cin
-from apps import pit
-from apps import lad
-from apps import sdp
-from apps import sfg
-from apps import ari
-from apps import col
+#from apps import nym
+#from apps import mia
+#from apps import stl
+#from apps import mil
+#from apps import chc
+#from apps import cin
+#from apps import pit
+#from apps import lad
+#from apps import sdp
+#from apps import sfg
+#from apps import ari
+#from apps import col
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
