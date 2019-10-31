@@ -64,7 +64,7 @@ def counts(s,b,hand,pitcher):
             total = df.query('pitcher_id == @pitcher and b_count == @ba and s_count == @st and stand == @hand').shape[0]
             if total == 0:
                 total = total + 1
-             else:
+            else:
                 total = total
             for value in pitches:
                 res.append(df.query('pitcher_id == @pitcher and b_count == @ba and s_count == @st and pitch_type == @value and stand == @hand').shape[0]
@@ -299,7 +299,7 @@ def update_table_Left(pitcher, value):
             
             if total == 0:
                 total = total + 1
-             else:
+            else:
                 total = total
                 
             for value in pitches:
@@ -335,7 +335,7 @@ def update_table_Right(pitcher, value):
             
             if total == 0:
                 total = total + 1
-             else:
+            else:
                 total = total
                 
             for value in pitches:
