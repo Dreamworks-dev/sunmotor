@@ -52,10 +52,10 @@ def display_page(pathname):
     elif pathname == '/pitch':
         return pitch.layout
     elif pathname == '/bal':
-        return bal()
+        return bal.layout
     elif pathname == '/nyy':
         from apps import nyy
-        return nyy()
+        return nyy.layout
     elif pathname == '/tbr':
         from apps import tbr
         return tbr.layout
