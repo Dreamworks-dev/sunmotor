@@ -8,35 +8,35 @@ from app import server
 from apps import pitch
 from apps import first
 from apps import bal
-#from apps import nyy
-#from apps import tbr
-#from apps import bos
-#from apps import tor
-#from apps import mins
-#from apps import cle
-#from apps import chw
-#from apps import kcr
-#from apps import det
-#from apps import hou
-#from apps import oak
-#from apps import tex
-#from apps import laa
-#from apps import sea
-#from apps import atl
-#from apps import wsn
-#from apps import phi
-#from apps import nym
-#from apps import mia
-#from apps import stl
+from apps import nyy
+from apps import tbr
+from apps import bos
+from apps import tor
+from apps import mins
+from apps import cle
+from apps import chw
+from apps import kcr
+from apps import det
+from apps import hou
+from apps import oak
+from apps import tex
+from apps import laa
+from apps import sea
+from apps import atl
+from apps import wsn
+from apps import phi
+from apps import nym
+from apps import mia
+from apps import stl
 from apps import mil
-#from apps import chc
-#from apps import cin
-#from apps import pit
-#from apps import lad
-#from apps import sdp
-#from apps import sfg
-#from apps import ari
-#from apps import col
+from apps import chc
+from apps import cin
+from apps import pit
+from apps import lad
+from apps import sdp
+from apps import sfg
+from apps import ari
+from apps import col
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
@@ -54,28 +54,25 @@ def display_page(pathname):
     elif pathname == '/bal':
         return bal.layout
     elif pathname == '/nyy':
-        from apps import nyy
         return nyy.layout
     elif pathname == '/tbr':
-        from apps import tbr
         return tbr.layout
     elif pathname == '/bos':
-        from apps import bos
         return bos.layout
     elif pathname == '/tor':
         from apps import tor
         return tor.layout
     elif pathname == '/mins':
-        from apps import mins
+        
         return mins.layout
     elif pathname == '/cle':
-        from apps import cle
+        #from apps import cle
         return cle.layout
     elif pathname == '/chw':
-        from apps import chw
+        #from apps import chw
         return chw.layout
     elif pathname == '/kcr':
-        from apps import kcr
+        #from apps import kcr
         return kcr.layout
     elif pathname == '/det':
         return det.layout
