@@ -181,7 +181,7 @@ layout = html.Div([
                             } for x in finR.columns.to_list()
                         ],
                         style_table={'width': '95%'})], className = "six columns")], className = "row")], style={
-                                                                    'backgroundColor' : lighter                   
+                                                                    'backgroundColor' : darker                   
                                                                     },className = "all")
                     
 ##                    html.Div([
