@@ -37,10 +37,7 @@ from apps import sdp
 from apps import sfg
 from apps import ari
 from apps import col
-from scout_apm.flask import ScoutApm
 
-ScoutApm(app)
-app.config["SCOUT_NAME"] = "Baseball Webb App"
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
