@@ -37,6 +37,13 @@ from apps import sdp
 from apps import sfg
 from apps import ari
 from apps import col
+from scout_apm.flask import ScoutApm
+
+ScoutApm(app)
+
+app.config["SCOUT_MONITOR"] = True
+app.config["SCOUT_KEY"] = "DLHussA7KhTv6t1G8CmG"
+app.config["SCOUT_NAME"] = "Baseball Webb App"
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
