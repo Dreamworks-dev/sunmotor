@@ -8,9 +8,8 @@ external_stylesheets = [ dbc.themes.BOOTSTRAP, 'https://codepen.io/almostburtmac
 
 
 
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets, meta_tags=[
-        {"name": "viewport", "content": "width=device-width, initial-scale=1"}])
-ScoutApm(app)
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+
 server = app.server
 app.config.suppress_callback_exceptions = True
-app.config["SCOUT_NAME"] = "Baseball Webb App"
+
